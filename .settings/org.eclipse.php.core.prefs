@@ -1,0 +1,5 @@
+#Tue Oct 19 18:30:44 CEST 2010
+eclipse.preferences.version=1
+include_path=0;/f2microagendapsv\u00051;/var/www/html/typo3_src-4.4.2\u00051;/var/www/html/newtypo/typo3conf/ext/phpunit
+phpVersion=php5.3
+use_asp_tags_as_php=false

@@ -1,0 +1,5 @@
+plugin.tx_f2microagendapsv.settings {
+	listLimit = 10
+	listHomepageLimit = 3
+	listArchiveLimit = 40
+}
