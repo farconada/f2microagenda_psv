@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'f2microagenda_psv'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_f2microagendapsv_domain_model_event">Event</label>
+			<label index="tx_f2microagendapsv_domain_model_event.event_date">Event Date</label>
+			<label index="tx_f2microagendapsv_domain_model_event.place">Place</label>
+			<label index="tx_f2microagendapsv_domain_model_event.country">Country</label>
+			<label index="tx_f2microagendapsv_domain_model_event.gmap_link">Gmap Link</label>
+			<label index="tx_f2microagendapsv_domain_model_event.tickets_link">Tickets Link</label>
+			<label index="tx_f2microagendapsv_domain_model_event.is_in_home">Is In Home</label>
+		</languageKey>
+	</data>
+</T3locallang>

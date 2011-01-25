@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the f2microagenda_psv extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_f2microagendapsv_domain_model_event">Eventos</label>
+			<label index="tx_f2microagendapsv_domain_model_event.event_date">Event Date</label>
+			<label index="tx_f2microagendapsv_domain_model_event.place">place</label>
+			<label index="tx_f2microagendapsv_domain_model_event.country">country</label>
+			<label index="tx_f2microagendapsv_domain_model_event.gmap_link">gmapLink</label>
+			<label index="tx_f2microagendapsv_domain_model_event.tickets_link">ticketsLink</label>
+			<label index="tx_f2microagendapsv_domain_model_event.is_in_home">isInHome</label>
+		</languageKey>
+	</data>
+</T3locallang>
