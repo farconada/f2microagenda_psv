@@ -13,7 +13,7 @@
 	<f:for each="{events}" as="event">
 			<tr>
 					<td><f:format.date format="F">{event.eventDate}</f:format.date></td>
-					<td><span class="microagenda_psv_date"<f:format.date format="d/m/Y">{event.eventDate}</f:format.date></span></td>
+					<td><span class="microagenda_psv_date"><f:format.date format="d/m/Y">{event.eventDate}</f:format.date></span></td>
 					<td>
 							<span class="microagenda_psv_place">{event.place}</span>
 							{event.bodytext}
