@@ -19,8 +19,23 @@
 							<span class="microagenda_psv_text">{event.bodytext}</span>
 					</td>
 					<td>{event.country}</td>
-					<td><f:link.external uri="{event.gmapLink}">Mapa</f:link.external></td>
-					<td><f:link.external uri="{event.ticketsLink}">Entradas</f:link.external></td>
+					<td>
+					   <f:if condition="{event.gmapLink}">
+                            <f:then>
+                            <f:link.external uri="{event.gmapLink}" class="microagenda_psv_map">Mapa</f:link.external>
+                            </f:then>
+                        </f:if>
+					</td>
+					<td>
+					   <f:if condition="{event.ticketsLink}">
+					       <f:then>
+					       <f:link.external uri="{event.ticketsLink}" class="microagenda_psv_ticket">Comprar</f:link.external>
+					       </f:then>
+					       <f:else>
+					       <span class="microagenda_psv_no_ticket">Sin entradas</span>
+					       </f:else>
+					   </f:if>
+					</td>
 			</tr>
 	</f:for>
 	</tbody>
