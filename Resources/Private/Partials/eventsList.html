@@ -1,24 +1,24 @@
 <table>
 	<thead>
 			<tr>
-					<th>Mes</th>
-					<th>D&iacute;a/Hora</th>
-					<th>Lugar</th>
-					<th>Pa&iacute;s</th>
-					<th>Mapa</th>
-					<th>Entradas</th>
+					<th class="microagenda_psv_col_month">Mes</th>
+					<th class="microagenda_psv_col_date">D&iacute;a/Hora</th>
+					<th class="microagenda_psv_col_place">Lugar</th>
+					<th class="microagenda_psv_col_country">Pa&iacute;s</th>
+					<th class="microagenda_psv_col_gmap">Mapa</th>
+					<th class="microagenda_psv_col_ticket">Entradas</th>
 			</tr>
 	</thead>
 	<tbody>
 	<f:for each="{events}" as="event">
 			<tr>
-					<td><f:format.date format="F">{event.eventDate}</f:format.date></td>
+					<td><span class="microagenda_psv_month"><f:format.date format="F">{event.eventDate}</f:format.date></span></td>
 					<td><span class="microagenda_psv_date"><f:format.date format="d/m/Y H:i">{event.eventDate}</f:format.date></span></td>
 					<td>
 							<span class="microagenda_psv_place">{event.place}</span>
 							<span class="microagenda_psv_text">{event.bodytext}</span>
 					</td>
-					<td>{event.country}</td>
+					<td><span class="microagenda_psv_country">{event.country}</span></td>
 					<td>
 					   <f:if condition="{event.gmapLink}">
                             <f:then>
