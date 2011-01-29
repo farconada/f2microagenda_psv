@@ -36,4 +36,6 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array (
 	)
 );
 
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['f2microagendapsv_pi1'] = 'pi_flexform';
+t3lib_extMgm::addPiFlexFormValue('f2microagendapsv_pi1', 'FILE:EXT:' . 'f2microagenda_psv/Configuration/FlexForms/flexform.xml');
 ?>
