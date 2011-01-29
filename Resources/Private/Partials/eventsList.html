@@ -19,8 +19,8 @@
 							<span class="microagenda_psv_text">{event.bodytext}</span>
 					</td>
 					<td>{event.country}</td>
-					<td>{event.gmapLink}</td>
-					<td>{event.ticketsLink}</td>
+					<td><f:link.external uri="{event.gmapLink}">Mapa</f:link.external></td>
+					<td><f:link.external uri="{event.ticketsLink}">Entradas</f:link.external></td>
 			</tr>
 	</f:for>
 	</tbody>
