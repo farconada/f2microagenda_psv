@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+		<ROOT>
+			<el>
+			<switchableControllerActions>
+				<TCEforms>
+					<label>Seleccione el modo del plugin</label>
+					<config>
+						<type>select</type>
+						<items>
+							<numIndex index="0">
+								<numIndex index="0">Listar todo</numIndex>
+								<numIndex index="1">Event->list;Event->listAll</numIndex>
+							</numIndex>
+							<numIndex index="1">
+								<numIndex index="0">Listado de portada</numIndex>
+								<numIndex index="1">Event->listHome</numIndex>
+							</numIndex>
+						</items>
+					</config>
+				</TCEforms>
+			</switchableControllerActions>
+			</el>
+		</ROOT>
+</T3DataStructure>

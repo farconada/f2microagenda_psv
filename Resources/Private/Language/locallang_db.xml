@@ -2,7 +2,7 @@
 <T3locallang>
 	<meta type="array">
 		<type>database</type>
-		<description>Language labels for database tables/fields belonging to extension 'f2microagenda_psv'</description>
+		<description>Language labels for database tables/fields belonging to extension 'f2microagendapsv'</description>
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">

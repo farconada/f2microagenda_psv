@@ -30,7 +30,7 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://bit.ly/kqimD GNU General Public License, version 3 or later
  */
-class Tx_F2microagendaPsv_Domain_Model_Event extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_F2microagendapsv_Domain_Model_Event extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
 	 * Event Date
@@ -68,6 +68,12 @@ class Tx_F2microagendaPsv_Domain_Model_Event extends Tx_Extbase_DomainObject_Abs
 	 * @var boolean
 	 */
 	protected $isInHome;
+	
+	/**
+     * bodytext
+     * @var string
+     */
+    protected $bodytext;
 
 
 
@@ -193,6 +199,25 @@ class Tx_F2microagendaPsv_Domain_Model_Event extends Tx_Extbase_DomainObject_Abs
 	public function isInHome() {
 		return $this->getIsInHome();
 	}
+	
+    /**
+     * Setter for bodytext
+     *
+     * @param string $bodytext bodytext
+     * @return void
+     */
+    public function setBodytext($bodytext) {
+        $this->bodytext = $bodytext;
+    }
+
+    /**
+     * Getter for bodytext
+     *
+     * @return string bodytext
+     */
+    public function getBodytext() {
+        return $this->bodytext;
+    }
 
 }
 ?>

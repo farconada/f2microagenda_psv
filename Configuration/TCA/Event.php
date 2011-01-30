@@ -60,7 +60,7 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 		),
 		'event_date' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.event_date',
+			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.event_date',
 			'config'  => array(
 				'type' => 'input',
 				'size' => 12,
@@ -72,7 +72,7 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 		),
 		'place' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.place',
+			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.place',
 			'config'  => array(
 				'type' => 'input',
 				'size' => 30,
@@ -81,7 +81,7 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 		),
 		'country' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.country',
+			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.country',
 			'config'  => array(
 				'type' => 'input',
 				'size' => 30,
@@ -90,7 +90,7 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 		),
 		'gmap_link' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.gmap_link',
+			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.gmap_link',
 			'config'  => array(
 				'type' => 'input',
 				'size' => 30,
@@ -112,7 +112,7 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 		),
 		'tickets_link' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.tickets_link',
+			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.tickets_link',
 			'config'  => array(
 				'type' => 'input',
 				'size' => 30,
@@ -134,7 +134,7 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 		),
 		'is_in_home' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.is_in_home',
+			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.is_in_home',
 			'config'  => array(
 				'type' => 'check',
 				'default' => 1

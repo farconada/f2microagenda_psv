@@ -1,11 +1,11 @@
 <f:layout name="default" />
 	<f:section name="content">
-		<div class="microagenda_psv_home">
+		<div class="microagendapsv_home">
 		    <ul>
 		        <f:for each="{events}" as="event">
 		            <li>
-		                <span class="microagenda_psv_place">{event.place}</span>
-		                <span class="microagenda_psv_date"><f:format.date format="d/m/Y">{event.eventDate}</f:format.date></span>
+		                <span class="microagendapsv_place">{event.place}</span>
+		                <span class="microagendapsv_date"><f:format.date format="d/m/Y">{event.eventDate}</f:format.date></span>
 		            </li>
 		        </f:for>
 		    </ul>

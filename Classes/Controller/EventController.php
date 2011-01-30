@@ -37,10 +37,10 @@
  * @author fernando
  *
  */
-class Tx_F2microagendaPsv_Controller_EventController extends Tx_Extbase_MVC_Controller_ActionController {
+class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Controller_ActionController {
 
 	/**
-	 * @var Tx_F2microagendaPsv_Domain_Repository_EventRepository
+	 * @var Tx_F2microagendapsv_Domain_Repository_EventRepository
 	 */
 	protected $eventRepository;
 
@@ -50,7 +50,7 @@ class Tx_F2microagendaPsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 	 * @return void
 	 */
 	protected function initializeAction() {
-		$this->eventRepository = t3lib_div::makeInstance('Tx_F2microagendaPsv_Domain_Repository_EventRepository');
+		$this->eventRepository = t3lib_div::makeInstance('Tx_F2microagendapsv_Domain_Repository_EventRepository');
 	}
 
 
