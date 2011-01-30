@@ -1,7 +1,7 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "f2microagenda_psv".
+# Extension Manager/Repository config file for ext "f2microagendapsv".
 #
 # Auto generated 15-10-2010 20:55
 #
@@ -11,7 +11,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'f2microagenda_psv',
+	'title' => 'f2microagendapsv',
 	'description' => '',
 	'category' => 'plugin',
 	'author' => '',

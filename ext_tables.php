@@ -4,20 +4,20 @@ if (!defined ('TYPO3_MODE')) die ('Access denied.');
 Tx_Extbase_Utility_Extension::registerPlugin(
 	$_EXTKEY,
 	'Pi1',
-	'f2microagenda_psv'
+	'f2microagendapsv'
 );
 
-t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'f2microagenda_psv');
+t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript', 'f2microagendapsv');
 
 //$TCA['tt_content']['types']['list']['subtypes_addlist'][$_EXTKEY . '_pi1'] = 'pi_flexform';
 //t3lib_extMgm::addPiFlexFormValue($_EXTKEY . '_pi1', 'FILE:EXT:' . $_EXTKEY . '/Configuration/FlexForms/flexform_list.xml');
 
 
-t3lib_extMgm::addLLrefForTCAdescr('tx_f2microagendapsv_domain_model_event', 'EXT:f2microagenda_psv/Resources/Private/Language/locallang_csh_tx_f2microagendapsv_domain_model_event.xml');
+t3lib_extMgm::addLLrefForTCAdescr('tx_f2microagendapsv_domain_model_event', 'EXT:f2microagendapsv/Resources/Private/Language/locallang_csh_tx_f2microagendapsv_domain_model_event.xml');
 t3lib_extMgm::allowTableOnStandardPages('tx_f2microagendapsv_domain_model_event');
 $TCA['tx_f2microagendapsv_domain_model_event'] = array (
 	'ctrl' => array (
-		'title'             => 'LLL:EXT:f2microagenda_psv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event',
+		'title'             => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event',
 		'label' 			=> 'event_date',
 		'tstamp' 			=> 'tstamp',
 		'crdate' 			=> 'crdate',
@@ -37,5 +37,5 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array (
 );
 
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['f2microagendapsv_pi1'] = 'pi_flexform';
-t3lib_extMgm::addPiFlexFormValue('f2microagendapsv_pi1', 'FILE:EXT:' . 'f2microagenda_psv/Configuration/FlexForms/flexform.xml');
+t3lib_extMgm::addPiFlexFormValue('f2microagendapsv_pi1', 'FILE:EXT:' . 'f2microagendapsv/Configuration/FlexForms/flexform.xml');
 ?>

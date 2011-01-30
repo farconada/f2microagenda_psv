@@ -23,20 +23,20 @@
 ***************************************************************/
 
 /**
- * Repository for Tx_F2microagendaPsv_Domain_Model_Event
+ * Repository for Tx_F2microagendapsv_Domain_Model_Event
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
  * @license http://bit.ly/kqimD GNU General Public License, version 3 or later
  */
-class Tx_F2microagendaPsv_Domain_Repository_EventRepository extends Tx_Extbase_Persistence_Repository {
+class Tx_F2microagendapsv_Domain_Repository_EventRepository extends Tx_Extbase_Persistence_Repository {
 
 	/**
 	 * Latests events
 	 *
 	 * @param	integer	$offset	Offset of returned records, <=0 if no limit
 	 * @param	integer	$limit	Limit of the number of recors, <=0 if no limit
-	 * @return	array<Tx_F2microagendaPsv_Domain_Model_Event>	array with events
+	 * @return	array<Tx_F2microagendapsv_Domain_Model_Event>	array with events
 	 */
 	public function findAll($offset = 0, $limit = 10) {
 		$query = $this->createQuery();
@@ -58,7 +58,7 @@ class Tx_F2microagendaPsv_Domain_Repository_EventRepository extends Tx_Extbase_P
 	 * Events for display in the homepage ordered by date desc
 	 *
 	 * @param	integer	$limit	Limit of the number of latests events
-	 * @return	array<Tx_F2microagendaPsv_Domain_Model_Event>	array with events
+	 * @return	array<Tx_F2microagendapsv_Domain_Model_Event>	array with events
 	 */
 	public function findHomepageEvents($limit = 3) {
 		$query = $this->createQuery();

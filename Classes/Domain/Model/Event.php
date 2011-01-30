@@ -30,7 +30,7 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://bit.ly/kqimD GNU General Public License, version 3 or later
  */
-class Tx_F2microagendaPsv_Domain_Model_Event extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_F2microagendapsv_Domain_Model_Event extends Tx_Extbase_DomainObject_AbstractEntity {
 
 	/**
 	 * Event Date
