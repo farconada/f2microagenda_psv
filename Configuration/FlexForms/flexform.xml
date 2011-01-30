@@ -10,7 +10,7 @@
 						<items>
 							<numIndex index="0">
 								<numIndex index="0">Listar todo</numIndex>
-								<numIndex index="1">Event->list</numIndex>
+								<numIndex index="1">Event->list;Event->listAll</numIndex>
 							</numIndex>
 							<numIndex index="1">
 								<numIndex index="0">Listado de portada</numIndex>
