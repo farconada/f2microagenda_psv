@@ -58,7 +58,7 @@ class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 
 	/**
 	 * list action
-	 *
+	 * Recupera los ultimos eventos hasta el tope de listLimit
 	 * @return string The rendered list action
 	 */
 	public function listAction() {
@@ -72,6 +72,7 @@ class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 
 	/**
 	 * List with the events for the home page
+	 * recupero los ultimos eventos marcados como Home
 	 *
 	 * @return string The rendered list action
 	 */
@@ -83,6 +84,8 @@ class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 
 	/**
 	 * Lists all events fron an offset if set
+	 * Recupera los ultimos eventos a partir del ultimo que se lista en listAction y con el tope
+	 * de listArchiveLimit
 	 *
 	 * @return string The rendered list action
 	 */
