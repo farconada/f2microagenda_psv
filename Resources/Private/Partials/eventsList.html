@@ -2,9 +2,10 @@
 	<thead>
 			<tr>
 					<th class="microagendapsv_col_month">Mes</th>
-					<th class="microagendapsv_col_date">D&iacute;a/Hora</th>
-					<th class="microagendapsv_col_place">Lugar</th>
-					<th class="microagendapsv_col_country">Pa&iacute;s</th>
+					<th class="microagendapsv_col_date">D&iacute;a</th>
+					<th class="microagendapsv_col_hour">Hora</th>
+					<th class="microagendapsv_col_place">Ciudad/Pa&iacute;s</th>
+					<th class="microagendapsv_col_info">Informaci&oacute;n del evento</th>
 					<th class="microagendapsv_col_gmap">Mapa</th>
 					<th class="microagendapsv_col_ticket">Entradas</th>
 			</tr>
@@ -12,17 +13,25 @@
 	<tbody>
 	<f:for each="{events}" as="event">
 			<tr>
-					<td><span class="microagendapsv_month"><f:format.date format="F">{event.eventDate}</f:format.date></span></td>
-					<td><span class="microagendapsv_date"><f:format.date format="d/m/Y H:i">{event.eventDate}</f:format.date></span></td>
+					<td>
+					   <span class="microagendapsv_month"><f:format.date format="F">{event.eventDate}</f:format.date></span>
+					   <span class="microagendapsv_year"><f:format.date format="Y">{event.eventDate}</f:format.date></span>
+				    </td>
+					<td>
+					   <span class="microagendapsv_date"><f:format.date format="d">{event.eventDate}</f:format.date></span>
+					</td>
+					<td>
+                       <span class="microagendapsv_date"><f:format.date format="H:i">{event.eventDate}</f:format.date></span>
+                    </td>
 					<td>
 							<span class="microagendapsv_place">{event.place}</span>
-							<div class="microagendapsv_text">{event.bodytext}</div>
+							<span class="microagendapsv_country">{event.country}</span>
 					</td>
-					<td><span class="microagendapsv_country">{event.country}</span></td>
+					<td><div class="microagendapsv_text"><f:format.html>{event.bodytext}</f:format.html></div></td>
 					<td>
 					   <f:if condition="{event.gmapLink}">
                             <f:then>
-                            <f:link.external uri="{event.gmapLink}" class="microagendapsv_map">Mapa</f:link.external>
+                            <f:link.external uri="{event.gmapLink}" class="microagendapsv_map">[+]</f:link.external>
                             </f:then>
                         </f:if>
 					</td>
