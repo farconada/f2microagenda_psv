@@ -27,7 +27,7 @@
 							<span class="microagendapsv_place">{event.place}</span>
 							<span class="microagendapsv_country">{event.country}</span>
 					</td>
-					<td><div class="microagendapsv_text">{event.bodytext}</div></td>
+					<td><div class="microagendapsv_text"><f:format.html>{event.bodytext}</f:format.html></div></td>
 					<td>
 					   <f:if condition="{event.gmapLink}">
                             <f:then>
