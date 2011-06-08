@@ -1,7 +1,7 @@
 <table>
 	<thead>
 			<tr>
-					<th class="microagendapsv_col_month"><f:translate key="mes" /></th>
+					<th class="microagendapsv_col_month"><f:translate key="fecha" /></th>
 					<th class="microagendapsv_col_hour"><f:translate key="hora" /></th>
 					<th class="microagendapsv_col_place"><f:translate key="ciudad_pais" /></th>
 					<th class="microagendapsv_col_info"><f:translate key="info" /></th>
@@ -13,7 +13,14 @@
 	<f:for each="{events}" as="event">
 			<tr>
 					<td>
-					   <span class="microagendapsv_date"><f:format.date format="d">{event.eventDate}</f:format.date></span> <f:translate key="de" /> <span class="microagendapsv_month"><f:translate key="mes{event.eventDate -> f:format.date(format:'n')}"><f:format.date format="F">{event.eventDate}</f:format.date></f:translate></span>
+					   <f:if condition="{f:translate(key:'formato_fecha')}">
+					       <f:then>
+					           <span class="microagendapsv_date"><f:format.date format="d">{event.eventDate}</f:format.date></span> <f:translate key="de" /> <span class="microagendapsv_month"><f:translate key="mes{event.eventDate -> f:format.date(format:'n')}" /></span>
+					       </f:then>
+					       <f:else>
+					           <span class="microagendapsv_month"><f:format.date format="F">{event.eventDate}</f:format.date></span> <span class="microagendapsv_date"><f:format.date format="j">{event.eventDate}</f:format.date></span>
+					       </f:else>
+					   </f:if>
 					   <span class="microagendapsv_year"><f:format.date format="Y">{event.eventDate}</f:format.date></span>
 				    </td>
 					<td>
