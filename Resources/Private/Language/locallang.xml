@@ -8,11 +8,41 @@
 		<languageKey index="default" type="array">
 			<label index="tx_f2microagendapsv_domain_model_event">Eventos</label>
 			<label index="tx_f2microagendapsv_domain_model_event.event_date">Event Date</label>
+            <label index="tx_f2microagendapsv_domain_model_event.without_hour">Without hour</label>
 			<label index="tx_f2microagendapsv_domain_model_event.place">place</label>
 			<label index="tx_f2microagendapsv_domain_model_event.country">country</label>
 			<label index="tx_f2microagendapsv_domain_model_event.gmap_link">gmapLink</label>
 			<label index="tx_f2microagendapsv_domain_model_event.tickets_link">ticketsLink</label>
 			<label index="tx_f2microagendapsv_domain_model_event.is_in_home">isInHome</label>
+			
+			<label index="mes1">Enero</label>
+			<label index="mes2">Febrero</label>
+			<label index="mes3">Marzo</label>
+			<label index="mes4">Abril</label>
+			<label index="mes5">Mayo</label>
+			<label index="mes6">Junio</label>
+			<label index="mes7">Julio</label>
+			<label index="mes8">Agosto</label>
+			<label index="mes9">Septiembre</label>
+			<label index="mes10">Octubre</label>
+			<label index="mes11">Noviembre</label>
+			<label index="mes12">Diciembre</label>
+			
+			<label index="mes">Mes</label>
+            <label index="hora">Hora</label>
+            <label index="ciudad_pais">Ciudad/País</label>
+            <label index="info">Información del evento</label>
+            <label index="mapa">Mapa</label>
+            <label index="entradas">Entradas</label>
+            
+            <label index="de">de</label>
+            <label index="comprar">Comprar</label>
+            <label index="sin_entradas">Sin entradas</label>
+            
+            <label index="title_ultimos">Últimos eventos</label>
+            <label index="title_archivo">Archivo de eventos</label>
+            <label index="ver_todos">Ver todos los eventos</label>
+            <label index="ir_resumen">Ir a los próximos eventos</label>
 		</languageKey>
 	</data>
 </T3locallang>

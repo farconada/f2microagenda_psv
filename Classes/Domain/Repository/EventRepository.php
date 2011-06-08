@@ -38,21 +38,18 @@ class Tx_F2microagendapsv_Domain_Repository_EventRepository extends Tx_Extbase_P
 	 * @param	integer	$limit	Limit of the number of recors, <=0 if no limit
 	 * @return	array<Tx_F2microagendapsv_Domain_Model_Event>	array with events
 	 */
-	public function findAll($offset = 0, $limit = 10) {
-		$query = $this->createQuery();
-		if ($limit > 0) {
-			$query->setLimit($limit);
-		}
-		if ($offset > 0) {
-			$query->setOffset($offset);
-		}
-		$query->setOrderings(
-			array(
-				'event_date' => Tx_Extbase_Persistence_QueryInterface::ORDER_DESCENDING
-			)
-		);
-		return $query->execute();
-	}
+    public function findAll($time = 0) {
+        $query = $this->createQuery();
+        if ($time > 0) {
+            $query->matching($query->greaterThanOrEqual('event_date',$time));
+        }
+        $query->setOrderings(
+            array(
+                'event_date' => Tx_Extbase_Persistence_QueryInterface::ORDER_ASCENDING
+            )
+        );
+        return $query->execute();
+    }
 
 	/**
 	 * Events for display in the homepage ordered by date desc
@@ -60,13 +57,16 @@ class Tx_F2microagendapsv_Domain_Repository_EventRepository extends Tx_Extbase_P
 	 * @param	integer	$limit	Limit of the number of latests events
 	 * @return	array<Tx_F2microagendapsv_Domain_Model_Event>	array with events
 	 */
-	public function findHomepageEvents($limit = 3) {
+	public function findHomepageEvents($limit = 3, $time = 0) {
 		$query = $this->createQuery();
+        if ($time > 0) {
+            $query->matching($query->greaterThanOrEqual('event_date',$time));
+        }
 		$query->equals('is_in_home', 1);
 		$query->setLimit($limit);
 		$query->setOrderings(
 			array(
-				'event_date' => Tx_Extbase_Persistence_QueryInterface::ORDER_DESCENDING
+				'event_date' => Tx_Extbase_Persistence_QueryInterface::ORDER_ASCENDING
 			)
 		);
 		return $query->execute();

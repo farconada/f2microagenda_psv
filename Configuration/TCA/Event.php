@@ -4,10 +4,10 @@ if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 	'ctrl' => $TCA['tx_f2microagendapsv_domain_model_event']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'event_date,place,country,gmap_link,tickets_link,is_in_home,bodytext;;2;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4'
+		'showRecordFieldList' => 'event_date,without_hour,place,country,gmap_link,tickets_link,is_in_home,bodytext;;2;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4'
 	),
 	'types' => array(
-		'1' => array('showitem' => 'event_date,place,country,gmap_link,tickets_link,is_in_home,bodytext;;2;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4')
+		'1' => array('showitem' => 'event_date,without_hour,place,country,gmap_link,tickets_link,is_in_home,bodytext;;2;richtext:rte_transform[flag=rte_enabled|mode=ts];4-4-4')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => '')
@@ -70,6 +70,14 @@ $TCA['tx_f2microagendapsv_domain_model_event'] = array(
 				'default' => '0'
 			)
 		),
+        'without_hour' => array(
+            'exclude' => 0,
+            'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.without_hour',
+            'config'  => array(
+                'type' => 'check',
+                'default' => 1
+            )
+        ),
 		'place' => array(
 			'exclude' => 0,
 			'label'   => 'LLL:EXT:f2microagendapsv/Resources/Private/Language/locallang_db.xml:tx_f2microagendapsv_domain_model_event.place',

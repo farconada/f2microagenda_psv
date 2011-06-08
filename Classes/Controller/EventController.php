@@ -62,12 +62,14 @@ class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 	 * @return string The rendered list action
 	 */
 	public function listAction() {
-		$limit = t3lib_div::intval_positive($this->settings['listLimit']);
+		/*$limit = t3lib_div::intval_positive($this->settings['listLimit']);
 		if ($limit) {
 			$this->view->assign('events', $this->eventRepository->findAll($offset = 0, $limit));
 		} else {
 			$this->view->assign('events', $this->eventRepository->findAll());
-		}
+		}*/
+		$time = time() - (1 * 24 * 60 * 60); //getTimestamp
+		$this->view->assign('events', $this->eventRepository->findAll($time));
 	}
 
 	/**
@@ -77,8 +79,8 @@ class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 	 */
 	public function listHomeAction() {
 		$limit = t3lib_div::intval_positive($this->settings['listHomepageLimit']);
-
-		$this->view->assign('events', $this->eventRepository->findHomepageEvents($limit));
+        $time = time() - (1 * 24 * 60 * 60); //getTimestamp
+		$this->view->assign('events', $this->eventRepository->findHomepageEvents($limit,$time));
 	}
 
 	/**
@@ -87,10 +89,20 @@ class Tx_F2microagendapsv_Controller_EventController extends Tx_Extbase_MVC_Cont
 	 * @return string The rendered list action
 	 */
 	public function listAllAction() {
-		$offset = t3lib_div::intval_positive($this->settings['listLimit']);
-		$limit = t3lib_div::intval_positive($this->settings['listArchiveLimit']);
+		//$offset = t3lib_div::intval_positive($this->settings['listLimit']);
+		//$limit = t3lib_div::intval_positive($this->settings['listArchiveLimit']);
 
-		$this->view->assign('events', $this->eventRepository->findAll($offset, $limit));
+		$this->view->assign('events', $this->eventRepository->findAll());
 	}
+	
+    /**
+     * Lists only all events
+     *
+     * @return string The rendered list action
+     */
+    public function listOnlyAllAction() {
+        $this->view->assign('events', $this->eventRepository->findAll());
+    }
+	
 }
 ?>

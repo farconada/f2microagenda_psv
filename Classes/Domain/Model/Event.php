@@ -40,6 +40,12 @@ class Tx_F2microagendapsv_Domain_Model_Event extends Tx_Extbase_DomainObject_Abs
 	protected $eventDate;
 
 	/**
+     * withoutHour
+     * @var boolean
+     */
+    protected $withoutHour;
+    
+	/**
 	 * place
 	 * @var string
 	 */
@@ -95,6 +101,25 @@ class Tx_F2microagendapsv_Domain_Model_Event extends Tx_Extbase_DomainObject_Abs
 	public function getEventDate() {
 		return $this->eventDate;
 	}
+	
+    /**
+     * Setter for withoutHour
+     *
+     * @param boolean $withoutHour withoutHour
+     * @return void
+     */
+    public function setWithoutHour($withoutHour) {
+        $this->withoutHour = $withoutHour;
+    }
+
+    /**
+     * Getter for v
+     *
+     * @return boolean withoutHour
+     */
+    public function getWithoutHour() {
+        return $this->withoutHour;
+    }
 
 	/**
 	 * Setter for place

@@ -8,6 +8,7 @@
 		<languageKey index="default" type="array">
 			<label index="tx_f2microagendapsv_domain_model_event">Event</label>
 			<label index="tx_f2microagendapsv_domain_model_event.event_date">Event Date</label>
+			<label index="tx_f2microagendapsv_domain_model_event.without_hour">Without hour</label>
 			<label index="tx_f2microagendapsv_domain_model_event.place">Place</label>
 			<label index="tx_f2microagendapsv_domain_model_event.country">Country</label>
 			<label index="tx_f2microagendapsv_domain_model_event.gmap_link">Gmap Link</label>

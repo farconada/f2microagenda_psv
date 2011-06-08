@@ -4,7 +4,8 @@ CREATE TABLE tx_f2microagendapsv_domain_model_event (
 
 
 	event_date int(11) DEFAULT '0' NOT NULL,
-	bodytext tinytext,
+	without_hour tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	bodytext text,
 	place tinytext,
 	country tinytext,
 	gmap_link tinytext,

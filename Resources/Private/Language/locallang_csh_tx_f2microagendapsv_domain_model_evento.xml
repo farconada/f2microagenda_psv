@@ -8,6 +8,7 @@
     <data type="array">
         <languageKey index="default" type="array">
 			<label index="event_date.description">Event Date</label>
+			<label index="without_hour.description">Without hour</label>
 			<label index="place.description">place</label>
 			<label index="country.description">country</label>
 			<label index="gmap_link.description">gmapLink</label>

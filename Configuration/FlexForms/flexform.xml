@@ -9,10 +9,14 @@
 						<type>select</type>
 						<items>
 							<numIndex index="0">
-								<numIndex index="0">Listar todo</numIndex>
+								<numIndex index="0">Listar actual/todo</numIndex>
 								<numIndex index="1">Event->list;Event->listAll</numIndex>
 							</numIndex>
-							<numIndex index="1">
+                            <numIndex index="1">
+                                <numIndex index="0">Listar solo todo</numIndex>
+                                <numIndex index="1">Event->listOnlyAll</numIndex>
+                            </numIndex>
+							<numIndex index="2">
 								<numIndex index="0">Listado de portada</numIndex>
 								<numIndex index="1">Event->listHome</numIndex>
 							</numIndex>
