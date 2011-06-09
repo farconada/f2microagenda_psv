@@ -17,6 +17,7 @@
 			
 			<label index="formato_fecha_home">d/m/Y</label>
 			<label index="formato_fecha">es</label>
+			<label index="formato_hora">H:i</label>
 			
 			<label index="mes1">Enero</label>
 			<label index="mes2">Febrero</label>
@@ -58,6 +59,7 @@
             <label index="tx_f2microagendapsv_domain_model_event.is_in_home">isInHome</label>
             
             <label index="formato_fecha_home">m/d/Y</label>
+            <label index="formato_hora">g:i a</label>
             
             <label index="fecha">Date</label>
             <label index="hora">Time</label>

@@ -27,7 +27,7 @@
                         <span class="microagendapsv_date">
                             <f:if condition="{event.withoutHour} != 1">
                                 <f:then>
-                                <f:format.date format="H:i">{event.eventDate}</f:format.date>
+                                <f:format.date format="{f:translate(key: 'formato_hora')}">{event.eventDate}</f:format.date>
                                 </f:then>
                             </f:if>
                         </span>
